@@ -10,6 +10,7 @@ public class Game1 : Game
 
     Paddle paddle;
     Paddle paddle2;
+    Ball ball;
 
     public Game1()
     {
@@ -25,6 +26,7 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
         paddle = new Paddle(false); 
         paddle2 = new Paddle(true);
+        ball = new Ball();
 
         base.Initialize();
     }
@@ -35,6 +37,7 @@ public class Game1 : Game
 
         Globals.background = Content.Load<Texture2D>("Background_Space");
         Globals.shiled = Content.Load<Texture2D>("escudo");
+        Globals.ball = Content.Load<Texture2D>("meteoro");
         // TODO: use this.Content to load your game content here
     }
 
@@ -46,6 +49,7 @@ public class Game1 : Game
         // TODO: Add your update logic here
         paddle.update(gameTime);
         paddle2.update(gameTime);
+        ball.update(gameTime, paddle, paddle2);
 
         base.Update(gameTime);
     }
@@ -60,6 +64,7 @@ public class Game1 : Game
         Globals.spriteBatch.Draw(Globals.background, new Rectangle(0, 0, 1280, 720),Color.White);
         paddle.Draw();
         paddle2.Draw();
+        ball.Draw();
 
         Globals.spriteBatch.End();  
 
