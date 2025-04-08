@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace pongEspacial;
 
@@ -9,7 +8,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
 
-    Texture2D background;
+    Paddle paddle;
 
     public Game1()
     {
@@ -23,6 +22,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
+        paddle = new Paddle(); 
 
         base.Initialize();
     }
@@ -31,7 +31,8 @@ public class Game1 : Game
     {
         Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        background = Content.Load<Texture2D>("Background_Space");
+        Globals.background = Content.Load<Texture2D>("Background_Space");
+        Globals.shiled = Content.Load<Texture2D>("escudo");
         // TODO: use this.Content to load your game content here
     }
 
@@ -41,6 +42,7 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
+        paddle.update(gameTime);
 
         base.Update(gameTime);
     }
@@ -51,8 +53,11 @@ public class Game1 : Game
 
         // TODO: Add your drawing code here
         Globals.spriteBatch.Begin();
-        Globals.spriteBatch.Draw(background, new Rectangle(0, 0, 800, 600),Color.White);
-        Globals.spriteBatch.End();
+        
+        Globals.spriteBatch.Draw(Globals.background, new Rectangle(0, 0, 1280, 720),Color.White);
+        paddle.Draw();
+
+        Globals.spriteBatch.End();  
 
         base.Draw(gameTime);
     }

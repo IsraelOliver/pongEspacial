@@ -7,6 +7,8 @@ public class Globals
 {
 
 public static SpriteBatch spriteBatch;
-public static int WIDTH = 800, HEIGHT = 600;
+public static int WIDTH = 1280, HEIGHT = 720;
+public static Texture2D shiled;
+public static Texture2D background;
 
 }
