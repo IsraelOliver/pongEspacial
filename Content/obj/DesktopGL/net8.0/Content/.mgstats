@@ -1,4 +1,1 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/Background_Space.png","C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/bin/DesktopGL/Content/Background_Space.xnb","TextureProcessor","Texture2DContent",290561,921685,0,588235
-"C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/escudo.png","C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/bin/DesktopGL/Content/escudo.xnb","TextureProcessor","Texture2DContent",949,24661,0,0119423
-"C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/meteoro.png","C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/bin/DesktopGL/Content/meteoro.xnb","TextureProcessor","Texture2DContent",4210,9301,0,0141488

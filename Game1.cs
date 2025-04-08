@@ -8,12 +8,14 @@ namespace pongEspacial;
 public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
+
     Texture2D background;
 
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
+        _graphics.PreferredBackBufferWidth = Globals.WIDTH;
+        _graphics.PreferredBackBufferHeight = Globals.HEIGHT;
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
@@ -27,7 +29,7 @@ public class Game1 : Game
 
     protected override void LoadContent()
     {
-        _spriteBatch = new SpriteBatch(GraphicsDevice);
+        Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
 
         background = Content.Load<Texture2D>("Background_Space");
         // TODO: use this.Content to load your game content here
@@ -48,9 +50,9 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
-        _spriteBatch.Begin();
-        _spriteBatch.Draw(background, new Rectangle(0, 0, 800, 600),Color.White);
-        _spriteBatch.End();
+        Globals.spriteBatch.Begin();
+        Globals.spriteBatch.Draw(background, new Rectangle(0, 0, 800, 600),Color.White);
+        Globals.spriteBatch.End();
 
         base.Draw(gameTime);
     }
