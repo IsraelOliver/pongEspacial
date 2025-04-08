@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pongEspacial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eabfbbf1a00c805ed31f90f85d4269f54e59403")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1f87da2230eb7e222e64c70b290a150998d6e27")]
 [assembly: System.Reflection.AssemblyProductAttribute("pongEspacial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pongEspacial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
