@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace pongEspacial;
 
@@ -8,6 +9,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
+    Texture2D background;
 
     public Game1()
     {
@@ -27,6 +29,7 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+        background = Content.Load<Texture2D>("Background_Space");
         // TODO: use this.Content to load your game content here
     }
 
@@ -45,6 +48,9 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
+        _spriteBatch.Begin();
+        _spriteBatch.Draw(background, new Rectangle(0, 0, 800, 600),Color.White);
+        _spriteBatch.End();
 
         base.Draw(gameTime);
     }

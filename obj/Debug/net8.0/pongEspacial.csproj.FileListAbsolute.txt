@@ -23,3 +23,7 @@ C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\Debug\net8.0\pongEspacial.pdb
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\Debug\net8.0\pongEspacial.genruntimeconfig.cache
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\Debug\net8.0\ref\pongEspacial.dll
+C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\Background_Space.xnb
+C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\escudo.xnb
+C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\meteoro.xnb
+C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\Debug\net8.0\pongEspacial.sourcelink.json
