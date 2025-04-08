@@ -1,4 +1,3 @@
-using System.Net;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
@@ -9,22 +8,24 @@ public class Paddle
     public Rectangle Shield;
 
     float paddleSpeed = 400f;
+    bool isSecondPlayer;
 
-    public Paddle()
+    public Paddle(bool isSecondPlayer)
     {
-        Shield = new Rectangle(150, 280, 70, 200);
+        this.isSecondPlayer = isSecondPlayer;
+        Shield = new Rectangle((this.isSecondPlayer ? Globals.WIDTH - 210 : 140), 280, 70, 200);
     }
     public void update(GameTime gameTime)
     {
         KeyboardState state = Keyboard.GetState();
         float updateSpeed = paddleSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-        if (state.IsKeyDown(Keys.W) && Shield.Y > 0)
+        if ((this.isSecondPlayer ? state.IsKeyDown(Keys.Up) : state.IsKeyDown(Keys.W) && Shield.Y > 0))
         {
             Shield.Y -= (int)updateSpeed;
         }
 
-        if (state.IsKeyDown(Keys.S) && Shield.Y < Globals.HEIGHT - Shield.Height)
+        if ((this.isSecondPlayer ? state.IsKeyDown(Keys.Down) : state.IsKeyDown(Keys.S) && Shield.Y < Globals.HEIGHT - Shield.Height))
         {
             Shield.Y += (int)updateSpeed;
         }

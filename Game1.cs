@@ -9,6 +9,7 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
 
     Paddle paddle;
+    Paddle paddle2;
 
     public Game1()
     {
@@ -22,7 +23,8 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        paddle = new Paddle(); 
+        paddle = new Paddle(false); 
+        paddle2 = new Paddle(true);
 
         base.Initialize();
     }
@@ -43,6 +45,7 @@ public class Game1 : Game
 
         // TODO: Add your update logic here
         paddle.update(gameTime);
+        paddle2.update(gameTime);
 
         base.Update(gameTime);
     }
@@ -56,6 +59,7 @@ public class Game1 : Game
         
         Globals.spriteBatch.Draw(Globals.background, new Rectangle(0, 0, 1280, 720),Color.White);
         paddle.Draw();
+        paddle2.Draw();
 
         Globals.spriteBatch.End();  
 
