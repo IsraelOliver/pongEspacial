@@ -24,12 +24,12 @@ public class Ball
         ball.X += right * deltaSpeed;
         ball.Y += top * deltaSpeed;
 
-        if (player1.Shield.Right > ball.Left && ball.Top > player1.Shield.Top && ball.Bottom < player1.Shield.Bottom)
+        if (ball.Right >= player1.Shield.Left && ball.Left < player1.Shield.Right && ball.Top < player1.Shield.Bottom && ball.Bottom > player1.Shield.Top)
         {
             right = 1;
         }
 
-        if (player2.Shield.Left < ball.Right && ball.Top > player2.Shield.Top && ball.Bottom < player2.Shield.Bottom)
+        if (ball.Left <= player2.Shield.Right && ball.Right > player2.Shield.Left && ball.Top < player2.Shield.Bottom && ball.Bottom > player2.Shield.Top)
         {
             right = -1;
         }

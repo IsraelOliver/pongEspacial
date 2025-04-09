@@ -7,8 +7,10 @@
     <File>C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/Background_Space.png</File>
     <File>C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/escudo.png</File>
     <File>C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/meteoro.png</File>
+    <File>C:/Users/Israel/Desktop/Israel/DotNet/Projetos C#/PongEspacial/pongEspacial/Content/Score.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

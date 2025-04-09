@@ -27,3 +27,4 @@ C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\escudo.xnb
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\meteoro.xnb
 C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\obj\Debug\net8.0\pongEspacial.sourcelink.json
+C:\Users\Israel\Desktop\Israel\DotNet\Projetos C#\PongEspacial\pongEspacial\bin\Debug\net8.0\Content\Score.xnb
