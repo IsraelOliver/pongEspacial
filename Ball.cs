@@ -18,7 +18,7 @@ public class Ball
         ball.Y = Globals.HEIGHT / 2 - 20;
     }
 
-    public void ballMoviment(GameTime gameTime, Paddle player1, Paddle player2)
+    public void ballMove(GameTime gameTime, Paddle player1, Paddle player2)
     {
         int deltaSpeed = (int)(moveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds);
         ball.X += right * deltaSpeed;
@@ -57,7 +57,7 @@ public class Ball
 
     public void Update(GameTime gameTime, Paddle player1, Paddle player2)
     {
-        ballMoviment(gameTime, player1, player2);
+        ballMove(gameTime, player1, player2);
     }
     public void Draw()
     {
