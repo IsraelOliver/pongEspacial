@@ -11,6 +11,7 @@ public class Game1 : Game
     Paddle paddle;
     Paddle paddle2;
     Ball ball;
+    Vector2 Louja;
 
     public Game1()
     {
@@ -73,5 +74,6 @@ public class Game1 : Game
         Globals.spriteBatch.End();  
 
         base.Draw(gameTime);
+
     }
 }
