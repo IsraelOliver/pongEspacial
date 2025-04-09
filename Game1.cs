@@ -11,7 +11,6 @@ public class Game1 : Game
     Paddle paddle;
     Paddle paddle2;
     Ball ball;
-    SpriteFont font;
 
     public Game1()
     {
@@ -39,7 +38,7 @@ public class Game1 : Game
         Globals.background = Content.Load<Texture2D>("Background_Space");
         Globals.shiled = Content.Load<Texture2D>("escudo");
         Globals.ball = Content.Load<Texture2D>("meteoro");
-        font = Content.Load<SpriteFont>("Score");
+        Globals.font = Content.Load<SpriteFont>("Score");
         // TODO: use this.Content to load your game content here
     }
 
@@ -68,8 +67,8 @@ public class Game1 : Game
         paddle2.Draw();
         ball.Draw();
 
-        Globals.spriteBatch.DrawString(font, Globals.player1_score.ToString(), new Vector2(300, 100), Color.White);
-        Globals.spriteBatch.DrawString(font, Globals.player2_score.ToString(), new Vector2(Globals.WIDTH - 300, 100), Color.White);
+        Globals.spriteBatch.DrawString(Globals.font, Globals.player1_score.ToString(), new Vector2(300, 100), Color.White);
+        Globals.spriteBatch.DrawString(Globals.font, Globals.player2_score.ToString(), new Vector2(Globals.WIDTH - 300, 100), Color.White);
 
         Globals.spriteBatch.End();  
 
