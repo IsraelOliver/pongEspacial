@@ -15,7 +15,8 @@ public class Paddle
         this.isSecondPlayer = isSecondPlayer;
         Shield = new Rectangle((this.isSecondPlayer ? Globals.WIDTH - 210 : 140), 280, 70, 200);
     }
-    public void update(GameTime gameTime)
+
+    public void moviment(GameTime gameTime)
     {
         KeyboardState state = Keyboard.GetState();
         float updateSpeed = paddleSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -29,6 +30,11 @@ public class Paddle
         {
             Shield.Y += (int)updateSpeed;
         }
+    }
+
+    public void Update(GameTime gameTime)
+    {
+        moviment(gameTime);
     }
     public void Draw(){
         Globals.spriteBatch.Draw(Globals.shiled, Shield, Color.White);

@@ -17,6 +17,7 @@ public class Game1 : Game
         _graphics = new GraphicsDeviceManager(this);
         _graphics.PreferredBackBufferWidth = Globals.WIDTH;
         _graphics.PreferredBackBufferHeight = Globals.HEIGHT;
+
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
@@ -48,9 +49,9 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
-        paddle.update(gameTime);
-        paddle2.update(gameTime);
-        ball.update(gameTime, paddle, paddle2);
+        paddle.Update(gameTime);
+        paddle2.Update(gameTime);
+        ball.Update(gameTime, paddle, paddle2);
 
         base.Update(gameTime);
     }
