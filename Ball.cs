@@ -27,11 +27,13 @@ public class Ball
         if (ball.Right >= player1.Shield.Left && ball.Left < player1.Shield.Right && ball.Top < player1.Shield.Bottom && ball.Bottom > player1.Shield.Top)
         {
             right = 1;
+            deltaSpeed++;
         }
 
         if (ball.Left <= player2.Shield.Right && ball.Right > player2.Shield.Left && ball.Top < player2.Shield.Bottom && ball.Bottom > player2.Shield.Top)
         {
             right = -1;
+            deltaSpeed++;
         }
 
         if (ball.Y < 0) {
